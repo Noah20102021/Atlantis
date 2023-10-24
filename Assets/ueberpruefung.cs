@@ -13,16 +13,24 @@ public class ueberpruefung : MonoBehaviour
     {
         
     }
+    public void Button()
+    {
+        text = Textfeld.GetComponent<TMP_InputField>().text;
+
+        if (text == "N" || text == "n")
+        {
+            Debug.Log("Richtig");
+        }
+        else
+        {
+            Debug.Log("Falsch");
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-        text = Textfeld.GetComponent<TMP_InputField>().text;
-
-        if(text == "N")
-        {
-            Debug.Log("Richtig");
-        }
+        
         
     }
 }
