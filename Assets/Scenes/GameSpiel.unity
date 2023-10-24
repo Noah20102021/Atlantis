@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
-  transform: {fileID: 308751712}
+  player: {fileID: 308751712}
 --- !u!1 &308751710
 GameObject:
   m_ObjectHideFlags: 0
