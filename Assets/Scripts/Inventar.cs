@@ -104,6 +104,69 @@ public class Inventar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            if (Slot1 == 1)
+            {
+                Slot1GM1.SetActive(false);
+                Slot1 = 0;
+                Debug.Log("Blauer Trank Eingesetzt");
+            }
+            if (Slot1 == 2)
+            {
+                Slot1GM2.SetActive(false);
+                Slot1 = 0;
+                Debug.Log("Roter Trank Eingesetzt");
+            }
+            if (Slot1 == 3)
+            {
+                Slot1GM3.SetActive(false);
+                Slot1 = 0;
+                Debug.Log("Grüner Trank Eingesetzt");
+            }
+        }
+        if (Input.GetKey(KeyCode.Alpha2))
+        {
+            if (Slot2 == 1)
+            {
+                Slot2GM1.SetActive(false);
+                Slot2 = 0;
+                Debug.Log("Blauer Trank Eingesetzt");
+            }
+            if (Slot2 == 2)
+            {
+                Slot2GM2.SetActive(false);
+                Slot2 = 0;
+                Debug.Log("Roter Trank Eingesetzt");
+            }
+            if (Slot2 == 3)
+            {
+                Slot2GM3.SetActive(false);
+                Slot2 = 0;
+                Debug.Log("Grüner Trank Eingesetzt");
+            }
+        }
+        if (Input.GetKey(KeyCode.Alpha3))
+        {
+            if (Slot3 == 1)
+            {
+                Slot3GM1.SetActive(false);
+                Slot3 = 0;
+                Debug.Log("Blauer Trank Eingesetzt");
+            }
+            if (Slot3 == 2)
+            {
+                Slot3GM2.SetActive(false);
+                Slot3 = 0;
+                Debug.Log("Roter Trank Eingesetzt");
+            }
+            if (Slot3 == 3)
+            {
+                Slot3GM3.SetActive(false);
+                Slot3 = 0;
+                Debug.Log("Grüner Trank Eingesetzt");
+            }
+        }
         if (Slot1 > 0)
         {
             if(Slot1 == 1)
