@@ -34,10 +34,10 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
-        //Enemy enemy = collision2D.collider.GetComponent<Enemy>();
+        enemy enemyscript = collision2D.collider.GetComponent<enemy>();
         if(collision2D.collider.CompareTag("Enemy")) 
         {
-            //enemy.takedamage(damage);
+            enemyscript.takeDamage(damage);
             Destroy(gameObject);
         }
     }
