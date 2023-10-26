@@ -23,17 +23,17 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
+        //mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
     }
 
     void FixedUpdate() 
     {
         rigidbody2D.MovePosition(rigidbody2D.position + Speed * Time.deltaTime * movement);
 
-        Vector2 lookdir = mousePosition - rigidbody2D.position;
+        //Vector2 lookdir = mousePosition - rigidbody2D.position;
 
-        float angle = Mathf.Atan2(lookdir.y, lookdir.x)* Mathf.Rad2Deg - 90;
+        //float angle = Mathf.Atan2(lookdir.y, lookdir.x)* Mathf.Rad2Deg - 90;
 
-        rigidbody2D.rotation = angle;   
+        //rigidbody2D.rotation = angle;   
     }
 }
