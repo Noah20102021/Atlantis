@@ -32,10 +32,10 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision2D)
+    private void OnTriggerEnter2D(Collider2D collision2D)
     {
-        enemy enemyscript = collision2D.collider.GetComponent<enemy>();
-        if(collision2D.collider.CompareTag("Enemy")) 
+        enemy enemyscript = collision2D.GetComponent<enemy>();
+        if(collision2D.CompareTag("Enemy")) 
         {
             enemyscript.takeDamage(damage);
             Destroy(gameObject);

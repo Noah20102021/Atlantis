@@ -25,7 +25,7 @@ public class Inventar : MonoBehaviour
     public GameObject Butten1;
     public GameObject Butten2;
     public GameObject Butten3;
-    //1 = Blauer Trank, 2 = Roter Trank, 3= Grüner Trank, 0 = Lerr
+    //1 = Blauer Trank, 2 = Roter Trank, 3= Grï¿½ner Trank, 0 = Lerr
     // Start is called before the first frame update
     void Trank()
     {
@@ -122,7 +122,7 @@ public class Inventar : MonoBehaviour
             {
                 Slot1GM3.SetActive(false);
                 Slot1 = 0;
-                Debug.Log("Grüner Trank Eingesetzt");
+                Debug.Log("Grï¿½ner Trank Eingesetzt");
             }
         }
         if (Input.GetKey(KeyCode.Alpha2))
@@ -143,7 +143,7 @@ public class Inventar : MonoBehaviour
             {
                 Slot2GM3.SetActive(false);
                 Slot2 = 0;
-                Debug.Log("Grüner Trank Eingesetzt");
+                Debug.Log("Gruener Trank Eingesetzt");
             }
         }
         if (Input.GetKey(KeyCode.Alpha3))
@@ -164,7 +164,7 @@ public class Inventar : MonoBehaviour
             {
                 Slot3GM3.SetActive(false);
                 Slot3 = 0;
-                Debug.Log("Grüner Trank Eingesetzt");
+                Debug.Log("Gruener Trank Eingesetzt");
             }
         }
         if (Slot1 > 0)
