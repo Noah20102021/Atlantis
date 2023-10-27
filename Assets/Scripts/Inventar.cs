@@ -96,10 +96,8 @@ public class Inventar : MonoBehaviour
         Itemauswahl.SetActive(false);
         SlotNeu = 0;
     }
-    void Start()
-    {
-        
-    }
+   
+    private powerup Powerup;
 
     // Update is called once per frame
     void Update()
@@ -111,18 +109,24 @@ public class Inventar : MonoBehaviour
                 Slot1GM1.SetActive(false);
                 Slot1 = 0;
                 Debug.Log("Blauer Trank Eingesetzt");
+                Powerup.UnterWasserAtmen();
+                StartCoroutine(Powerup.DauerVonPowerUp());
             }
             if (Slot1 == 2)
             {
                 Slot1GM2.SetActive(false);
                 Slot1 = 0;
                 Debug.Log("Roter Trank Eingesetzt");
+                Powerup.MehrSchadenMachen();
+                StartCoroutine(Powerup.DauerVonPowerUp());
             }
             if (Slot1 == 3)
             {
                 Slot1GM3.SetActive(false);
                 Slot1 = 0;
-                Debug.Log("Gr�ner Trank Eingesetzt");
+                Debug.Log("Gruener Trank Eingesetzt");
+                Powerup.SchnellerLaufen();
+                StartCoroutine(Powerup.DauerVonPowerUp());
             }
         }
         if (Input.GetKey(KeyCode.Alpha2))
@@ -132,18 +136,24 @@ public class Inventar : MonoBehaviour
                 Slot2GM1.SetActive(false);
                 Slot2 = 0;
                 Debug.Log("Blauer Trank Eingesetzt");
+                Powerup.UnterWasserAtmen();
+                StartCoroutine(Powerup.DauerVonPowerUp());
             }
             if (Slot2 == 2)
             {
                 Slot2GM2.SetActive(false);
                 Slot2 = 0;
                 Debug.Log("Roter Trank Eingesetzt");
+                Powerup.MehrSchadenMachen();
+                StartCoroutine(Powerup.DauerVonPowerUp());
             }
             if (Slot2 == 3)
             {
                 Slot2GM3.SetActive(false);
                 Slot2 = 0;
-                Debug.Log("Gruener Trank Eingesetzt");
+                Debug.Log("Gruener Trank Eingesetzt");Powerup.SchnellerLaufen();
+                StartCoroutine(Powerup.DauerVonPowerUp());
+
             }
         }
         if (Input.GetKey(KeyCode.Alpha3))
@@ -153,18 +163,24 @@ public class Inventar : MonoBehaviour
                 Slot3GM1.SetActive(false);
                 Slot3 = 0;
                 Debug.Log("Blauer Trank Eingesetzt");
+                Powerup.UnterWasserAtmen();
+                StartCoroutine(Powerup.DauerVonPowerUp());
             }
             if (Slot3 == 2)
             {
                 Slot3GM2.SetActive(false);
                 Slot3 = 0;
                 Debug.Log("Roter Trank Eingesetzt");
+                Powerup.MehrSchadenMachen();
+                StartCoroutine(Powerup.DauerVonPowerUp());
             }
             if (Slot3 == 3)
             {
                 Slot3GM3.SetActive(false);
                 Slot3 = 0;
                 Debug.Log("Gruener Trank Eingesetzt");
+                Powerup.SchnellerLaufen();
+                StartCoroutine(Powerup.DauerVonPowerUp());
             }
         }
         if (Slot1 > 0)

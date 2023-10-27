@@ -10,7 +10,7 @@ public class AirBar : MonoBehaviour
 
 	public int Score => score;
 
-	[SerializeField] int score = 1;
+	public  int score = 1;
 
 	[SerializeField] Timer timer;
 
