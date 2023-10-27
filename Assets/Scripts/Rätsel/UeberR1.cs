@@ -8,8 +8,8 @@ public class UberR1 : MonoBehaviour
     public GameObject Textfeld;
     public string text;
     public GameObject butten;
-    public GameObject Rätsel;
-    public GameObject RätselScri;
+    public GameObject Raetsel;
+    public GameObject RaetselScri;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +22,13 @@ public class UberR1 : MonoBehaviour
         if (text == "B" || text == "b")
         {
             Debug.Log("Richtig");
-            Rätsel.SetActive(false);
-            RätselScri.SendMessage("Richtig");
+            Raetsel.SetActive(false);
+            RaetselScri.SendMessage("Richtig");
         }
         else
         {
             Debug.Log("Falsch");
-            Rätsel.SetActive(false);
+            Raetsel.SetActive(false);
         }
     }
 
