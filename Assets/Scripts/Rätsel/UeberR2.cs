@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ueberpruefung : MonoBehaviour
+public class UberR2 : MonoBehaviour
 {
     public GameObject Textfeld;
     public string text;
     public GameObject butten;
-    public GameObject raetsel;
-    public GameObject Truhe;
+    public GameObject Rätsel;
+    public GameObject RätselScri;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,17 +19,16 @@ public class ueberpruefung : MonoBehaviour
     {
         text = Textfeld.GetComponent<TMP_InputField>().text;
 
-        if (text == "N" || text == "n")
+        if (text == "B" || text == "b")
         {
             Debug.Log("Richtig");
-            raetsel.SetActive(false);
-            Truhe.SendMessage("Geloest");
+            Rätsel.SetActive(false);
+            RätselScri.SendMessage("Richtig");
         }
         else
         {
             Debug.Log("Falsch");
-            raetsel.SetActive(false);
-            Truhe.SendMessage("Faltch");
+            Rätsel.SetActive(false);
         }
     }
 
