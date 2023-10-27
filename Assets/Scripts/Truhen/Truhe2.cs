@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Truhe1 : MonoBehaviour
+public class Truhe2 : MonoBehaviour
 {
     public GameObject Text;
     public Boolean IsOpen;
